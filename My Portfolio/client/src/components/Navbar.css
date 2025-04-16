@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: linear-gradient(to right, rgb(238, 141, 51), rgb(74, 107, 255));
+    background: linear-gradient(to right, rgba(233, 213, 39, 0.86), rgb(0, 47, 255));
     position: fixed;
     width: 100%;
     top: 0;
@@ -19,6 +19,17 @@
 .logo {
     font-size: calc(14px + 1vw); /* Scales with screen size */
     font-weight: bold;
+    display: flex; /* Flex layout for logo */
+    align-items: center; /* Align content vertically */
+    gap: 10px; /* Space between logo text and image */
+}
+
+/* Developer Logo Image Styling */
+.developer-logo {
+    height: 40px; /* Adjusted height for better fit in header */
+    width: 40px; /* Equal width for a perfect circle */
+    border-radius: 50%; /* Fully rounded corners for a circular appearance */
+    object-fit: cover; /* Ensures the image fits without distortion */
 }
 
 /* Hamburger Menu Button */
@@ -28,19 +39,52 @@
     color: white;
     background: none;
     border: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
 }
 
-/* Links */
+.hamburger:hover {
+    color: rgb(151, 241, 108); /* Highlight on hover for better visibility */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Navbar Links */
 .nav-link {
     color: white;
     text-decoration: none;
     font-size: 18px;
     padding: 5px 10px;
-    transition: color 0.3s ease, transform 0.3s ease; /* Removed background transition for hover */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .nav-link:hover {
-    color: rgb(151, 241, 108); /* Soft color change on hover */
-    transform: scale(1.05); /* Slight scaling effect */
-    text-decoration: none; /* Ensure no underline on hover */
+    color: rgb(151, 241, 108); /* Green hover effect for links */
+    transform: scale(1.1); /* Enhanced scaling effect */
+    text-decoration: none; /* Ensures no underline on hover */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/* Dropdown Menu */
+.navbar.dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50px; /* Dropdown positioned below the header */
+    right: 10px;
+    background: rgba(0, 47, 255, 0.9); /* Slightly transparent background */
+    border-radius: 5px; /* Rounded corners for dropdown */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow for better visibility */
+}
+
+.navbar.dropdown.active {
+    display: flex; /* Display dropdown when active */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust spacing for dropdown links */
 }

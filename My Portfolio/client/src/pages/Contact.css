@@ -1,0 +1,59 @@
+/* Contact.css */
+
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Ensures the cards stack vertically in a column */
+    align-items: center; /* Center-aligns the cards */
+    gap: 20px; /* Space between each card */
+    margin: 50px 0;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Professional gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 90%; /* Increased width for a spacious layout */
+    max-width: 600px; /* Limit the maximum width */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card h3 {
+    font-size: 1.8rem; /* Slightly larger font size for headings */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-card p, .contact-card a {
+    font-size: 1.2rem; /* Increased font size for readability */
+    color: #444;
+    text-decoration: none;
+}
+
+.contact-card.email-card {
+    width: fit-content;
+    border-left: 6px solid #0078D4; /* Blue accent for email */
+}
+
+.contact-card.phone-card {
+    border-left: 6px solid #28A745; /* Green accent for phone */
+}
+
+.contact-card.linkedin-card {
+    border-left: 6px solid #0A66C2; /* LinkedIn blue accent */
+}
+
+.contact-card.github-card {
+    border-left: 6px solid #6e5494; /* Purple accent for GitHub */
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Highlight effect for link hover */
+}

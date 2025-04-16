@@ -130,3 +130,58 @@ footer.footer {
         font-size: 12px; /* Adjust link font size */
     }
 }
+/* ========================= */
+/* 🔥 GitHub Button Styling  */
+/* ========================= */
+
+.footer-links {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Base GitHub Link */
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+/* Main Repo - Pink Theme */
+.github-link.pink {
+    background: linear-gradient(135deg, #ff4f81, #ff85a2);
+    color: white;
+}
+
+.github-link.pink:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 16px rgba(255, 79, 129, 0.5);
+}
+
+/* Side Project - Blue Theme */
+.github-link.blue {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    color: white;
+}
+
+.github-link.blue:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+}
+
+/* Icon inside GitHub links */
+.github-icon {
+    font-size: 18px;
+}
+

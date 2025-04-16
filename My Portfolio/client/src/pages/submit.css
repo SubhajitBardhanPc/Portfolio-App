@@ -1,0 +1,87 @@
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for focus */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensures it overlays all other content */
+}
+
+/* Modal Content Styling */
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Modal Close Button Styling */
+.modal-close {
+    position: absolute;
+    top: 10px; /* Aligns to the top */
+    right: 15px; /* Aligns to the right */
+    font-size: 28px; /* Makes it prominent */
+    color: red; /* Red for attention */
+    cursor: pointer;
+    font-weight: bold; /* Bold for emphasis */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.modal-close:hover {
+    color: darkred; /* Darker red on hover */
+}
+
+/* Button Row for Submit and Close */
+.button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 30px; /* Space above buttons */
+}
+
+/* Button Wrapper */
+.button-wrapper {
+    margin: 10px; /* Space around each button */
+}
+
+/* Button Styling */
+.submit-btn,
+.close-btn {
+    min-width: 120px; /* Ensures consistent button width */
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px; /* Rounded edges */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth background transition */
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #4caf50; /* Green for success */
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Close Button */
+.close-btn {
+    background-color: #f44336; /* Red for danger */
+    color: white;
+}
+
+.close-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}

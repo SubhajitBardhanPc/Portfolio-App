@@ -16,7 +16,7 @@ const Navbar = () => {
                 <a href="/" className="nav-link">Home</a>
                 <a href="/about" className="nav-link">About</a>
                 <a href="/technical-skills" className="nav-link">Skills</a>
-                <a href="#" className="nav-link">Contact</a>
+                <a href="/contact" className="nav-link">Contact</a>
             </nav>
         </header>
     );

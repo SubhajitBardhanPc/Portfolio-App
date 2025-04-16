@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { FaGithub, FaHeart } from 'react-icons/fa';
+import logo from "../assets/logo.png"; // Import your logo image
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="footer-content">
         {/* Logo */}
         <div className="footer-image">
-          <img src="path_to_your_image.jpg" alt="Logo" />
+          <img src={logo} alt="Logo" />
         </div>
 
         {/* Center Text */}

@@ -1,12 +1,12 @@
 import React from "react";
 import "./Home.css";
-import logo from "../assets/logo.png";
+import image from "../assets/image.png" // Import your image
 
 const Home = () => {
   return (
     <>
       <div className="profile-section">
-        <img src={logo} alt="Your Profile" className="profile-image" />
+        <img src={image} alt="Your Profile" className="profile-image" />
         <h1>Welcome to My Portfolio</h1>
         <p>Explore my journey, experiences, and skills.</p>
       </div>

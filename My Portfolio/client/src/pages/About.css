@@ -6,7 +6,7 @@ body {
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, rgb(189, 211, 252), rgb(240, 255, 175)); /* teal to soft lavender */
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@ body {
     margin: auto;
     background-color: white;
     width: 100%;
-    
+    height: calc(95% + 50px); /* Increase height by 50px */
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);

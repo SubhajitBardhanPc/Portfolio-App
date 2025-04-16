@@ -1,0 +1,132 @@
+/* Global Reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+/* Footer Styling */
+footer.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Ensure the footer is at the far left of the screen */
+    width: 100%; /* Ensures the footer spans the full width of the viewport */
+    background: rgba(0, 0, 0, 0.8); /* Black blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Vertical padding for the footer content */
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5); /* Enhanced shadow for the footer */
+    z-index: 10;
+}
+
+/* Footer Content */
+.footer-content {
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Space between elements in the footer */
+    align-items: center;
+    padding: 0 20px; /* Padding to give space from the sides */
+}
+
+/* Footer Image */
+.footer-image img {
+    width: 90px; /* Circular image size */
+    height: 90px;
+    border-radius: 50%; /* Perfectly round */
+    border: 2px solid white; /* Optional border */
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    margin-right: 1rem;
+}
+
+/* Footer Text */
+.footer-content p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Optional styles for links in footer */
+.footer-content a {
+    color: #ff4f81; /* Radish pink color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for 1080px screens */
+@media screen and (max-width: 1080px) {
+    .footer-content {
+        padding: 0 40px; /* Adjust padding for slightly smaller screens */
+    }
+
+    .footer-image img {
+        width: 80px; /* Slightly smaller image on 1080px screens */
+        height: 80px;
+    }
+
+    .footer-content p {
+        font-size: 12px; /* Slightly smaller font size for 1080px screens */
+    }
+}
+
+/* Media Query for 1440px screens */
+@media screen and (max-width: 1440px) {
+    .footer-content {
+        padding: 0 50px; /* More padding for larger screens */
+    }
+
+    .footer-image img {
+        width: 100px; /* Larger image for 1440px screens */
+        height: 100px;
+    }
+
+    .footer-content p {
+        font-size: 16px; /* Larger font size for 1440px screens */
+    }
+}
+
+/* Media Query for 720px screens */
+@media screen and (max-width: 720px) {
+    footer.footer {
+        padding: 15px 0; /* Adjust padding for smaller screens */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px; /* Adjust padding to maintain spacing */
+    }
+
+    .footer-image img {
+        width: 70px; /* Smaller image on 720px screens */
+        height: 70px;
+    }
+
+    .footer-content p {
+        font-size: 12px; /* Smaller font size on 720px screens */
+        text-align: center;
+    }
+}
+
+/* Mobile and smaller screens */
+@media screen and (max-width: 480px) {
+    .footer-content p {
+        font-size: 10px; /* Further reduce text size */
+    }
+
+    .footer-image img {
+        width: 60px; /* Even smaller image */
+        height: 60px;
+    }
+
+    .footer-content a {
+        font-size: 12px; /* Adjust link font size */
+    }
+}

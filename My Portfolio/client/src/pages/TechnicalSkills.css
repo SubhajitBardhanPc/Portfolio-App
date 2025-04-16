@@ -1,13 +1,23 @@
-
 .technical-skills-container {
+    width: 100%;
+    max-width: 2000px; /* Optional: limits the maximum width */
+     /* Optional: limits the maximum width */
+    /* Centers the container horizontally */
     padding: 60px 20px;
-    background: linear-gradient(180deg,rgba(165, 181, 231, 0.42),rgba(226, 232, 240, 0.42));
+    height: 500px;
+    align-content: center;
+    justify-content: center;
+    
+    background: linear-gradient(180deg, rgba(165, 181, 231, 0.42), rgba(226, 232, 240, 0.42));
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     overflow: hidden;
+    border-radius: 20px; /* Adds rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
   }
+  
   
   /* Title */
   .skills-title {

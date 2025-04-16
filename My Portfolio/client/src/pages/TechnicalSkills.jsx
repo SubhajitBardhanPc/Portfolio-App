@@ -9,8 +9,8 @@ const skills = [
   "Node.js",
   "HTML & CSS",
   "Python",
-  "SQL & NoSQL Databases",
-  "Git & GitHub",
+  "SQL",
+  "Git",
   
 ];
 
@@ -29,8 +29,9 @@ const TechnicalSkills = () => {
             key={index}
             style={{ "--i": index }} // Pass the index for animation delay
           >
-            <div className="circle" />
+            
             <div className="skill-text">{skill}</div>
+            <div className="circle" />
           </div>
         ))}
       </div>

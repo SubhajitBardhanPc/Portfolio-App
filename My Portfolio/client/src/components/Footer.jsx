@@ -14,8 +14,9 @@ const Footer = () => {
 
         {/* Center Text */}
         <div className="footer-center">
+          
+          <p className="footer-text">Made by Subhajit</p>
           <p className="footer-text">&copy; 2025 Subhajit Bardhan. All Rights Reserved.</p>
-          <p className="footer-text">Made with <FaHeart className="heart-icon" /> by Subhajit</p>
         </div>
 
         {/* GitHub Repos */}

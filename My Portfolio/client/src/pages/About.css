@@ -5,7 +5,7 @@ body {
     padding: 0;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, rgb(84, 250, 233), rgba(245, 183, 255, 0.9)); /* teal to soft lavender */
+    background: linear-gradient(135deg, rgb(189, 211, 252), rgb(240, 255, 175)); /* teal to soft lavender */
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@ body {
     margin: auto;
     background-color: white;
     width: 100%;
-    max-width: 1080px;
+    
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);

@@ -62,6 +62,14 @@
     text-decoration: none; /* Ensures no underline on hover */
 }
 
+/* Active Navbar Link */
+.nav-link.active {
+    color: rgb(151, 241, 108); /* Green color for active link */
+    border: 2px solid rgb(151, 241, 108); /* Add a border around the active link */
+    border-radius: 5px; /* Rounded corners for the border */
+    background-color: rgba(151, 241, 108, 0.1); /* Slight background highlight */
+}
+
 /* Navbar */
 .navbar {
     display: flex;

@@ -1,0 +1,133 @@
+/* Home.css */
+
+.home-container {
+    padding: 100px; /* Increased internal spacing inside the container */
+    margin: 300px; /* Space around the container */
+    background: linear-gradient(135deg, #a8edea, #ffe5d9); /* Artistic gradient background */
+    min-height: calc(100vh - 400px); /* Account for added margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border-radius: 20px; /* Slight rounding for elegance */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Profile Section Styling */
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px; /* Space below the profile section */
+    padding: 20px; /* Added padding inside the section */
+}
+
+.profile-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Elevated shadow for a refined look */
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.profile-section h1 {
+    font-size: 3rem; /* Larger font size for emphasis */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Adds a modern touch */
+    letter-spacing: 2px; /* Spacing for clarity */
+}
+
+.profile-section p {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic; /* Adds artistic flair */
+}
+
+/* Card Styling */
+.experience-card, .internship-card {
+    background: linear-gradient(145deg, #e3f9fd, #cfd8dc); /* Elegant gradient */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    border-radius: 20px; /* Increased corner rounding */
+    width: 260px; /* Slightly reduced card width */
+    text-align: center;
+    padding: 25px; /* Adjusted padding for spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.experience-card:hover, .internship-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* Elevated hover shadow */
+    background: linear-gradient(145deg, #e6eeff, #fdfbff); /* Slight color change on hover */
+}
+
+.experience-card h3, .internship-card h3 {
+    font-size: 1.7rem; /* Adjusted heading size */
+    margin-bottom: 15px;
+    color: #222; /* Slightly darker color for emphasis */
+    font-weight: 600;
+    text-transform: capitalize; /* Enhances readability */
+}
+
+.experience-card p, .internship-card p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Cards Layout */
+.experience-cards, .internship-cards {
+    display: flex;
+    justify-content: center; /* Align cards horizontally */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+    gap: 30px; /* Space between cards */
+    margin-top: 20px; /* Space between heading and cards */
+}
+
+/* List inside Internship Cards */
+.internship-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.internship-card li {
+    font-size: 1.2rem;
+    color: #555; /* Slightly muted color for text */
+    margin-bottom: 10px;
+}
+
+/* Links Styling */
+.internship-card a {
+    color: #0078D4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* Subtle underline effect */
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.internship-card a:hover {
+    text-decoration: none;
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3; /* Highlight effect on hover */
+}

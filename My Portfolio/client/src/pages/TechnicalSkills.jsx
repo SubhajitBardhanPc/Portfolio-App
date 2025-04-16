@@ -2,6 +2,8 @@ import React from "react";
 import "./TechnicalSkills.css"; // Make sure this CSS file is linked
 
 const skills = [
+    "Java",
+    "Android",
   "JavaScript",
   "React",
   "Node.js",
@@ -9,7 +11,7 @@ const skills = [
   "Python",
   "SQL & NoSQL Databases",
   "Git & GitHub",
-  "RESTful APIs",
+  
 ];
 
 const TechnicalSkills = () => {

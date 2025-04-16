@@ -2,26 +2,35 @@
 
 .contact-container {
     display: flex;
-    flex-direction: column; /* Ensures the cards stack vertically in a column */
-    align-items: center; /* Center-aligns the cards */
-    gap: 20px; /* Space between each card */
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Increased spacing for a cleaner layout */
     margin: 50px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Space between cards */
+    width: 100%;
+    max-width: 900px; /* Limit the width for a cleaner layout */
 }
 
 .contact-card {
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Professional gradient */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    width: 90%; /* Increased width for a spacious layout */
-    max-width: 600px; /* Limit the maximum width */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Larger shadow for enhanced depth */
+    border-radius: 20px; /* Larger corner radius for modern look */
+    width: 48%; /* Increased width for each card */
     text-align: center;
-    padding: 20px;
+    padding: 25px; /* Larger padding for spacious design */
     transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none; /* Prevent underline on clickable cards */
+    color: inherit; /* Use inherited text color */
 }
 
 .contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px); /* Stronger hover effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .contact-card h3 {
@@ -30,30 +39,34 @@
     color: #333;
 }
 
-.contact-card p, .contact-card a {
-    font-size: 1.2rem; /* Increased font size for readability */
+.contact-card p {
+    font-size: 1.3rem; /* Increased font size for readability */
     color: #444;
-    text-decoration: none;
-}
-
-.contact-card.email-card {
-    width: fit-content;
-    border-left: 6px solid #0078D4; /* Blue accent for email */
 }
 
 .contact-card.phone-card {
-    border-left: 6px solid #28A745; /* Green accent for phone */
+    width: 600px;
+    border-left: 8px solid #28A745; /* Green for phone */
 }
 
 .contact-card.linkedin-card {
-    border-left: 6px solid #0A66C2; /* LinkedIn blue accent */
+    width: 600px;
+    border-left: 8px solid #0A66C2; /* LinkedIn blue */
 }
 
 .contact-card.github-card {
-    border-left: 6px solid #6e5494; /* Purple accent for GitHub */
+    width: 600px;
+    border-left: 8px solid #6e5494; /* Purple for GitHub */
 }
 
-.contact-card a:hover {
-    text-decoration: underline;
-    color: #0056b3; /* Highlight effect for link hover */
+.contact-card.email-card {
+    border-left: 8px solid #0078D4; /* Blue for email */
+    width: 65%; /* Email card width is larger */
+    max-width: 600px; /* Limit max width */
+}
+
+/* Center the Email Card */
+.email-center {
+    margin-top: 40px; /* Add extra space above email card */
+    align-self: center; /* Center align */
 }

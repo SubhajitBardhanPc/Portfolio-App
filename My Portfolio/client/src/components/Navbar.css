@@ -1,0 +1,46 @@
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, rgb(238, 141, 51), rgb(74, 107, 255));
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Logo */
+.logo {
+    font-size: calc(14px + 1vw); /* Scales with screen size */
+    font-weight: bold;
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+}
+
+/* Links */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Removed background transition for hover */
+}
+
+.nav-link:hover {
+    color: rgb(151, 241, 108); /* Soft color change on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+    text-decoration: none; /* Ensure no underline on hover */
+}

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./TechnicalSkills.css"; // Assuming you have a CSS file for styling
 const TechnicalSkills = () => {
     return (
         <div className="technical-skills-content">

@@ -1,0 +1,55 @@
+/* About.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, rgb(84, 250, 233), rgba(245, 183, 255, 0.9)); /* teal to soft lavender */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    max-width: 1080px;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: yellowgreen; /* greenish-yellow header */
+}
+
+.about-card {
+    background-color: #fafafa;
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-7px);
+}
+
+.card-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #333; /* black text for headings */
+}
+
+.about-card p {
+    color: black; /* black text for descriptions */
+}

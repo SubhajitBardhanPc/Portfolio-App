@@ -6,6 +6,7 @@ import TechnicalSkills from "./pages/TechnicalSkills";
 import Contact from "./pages/Contact";
 
 
+
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/technical-skills" element={<TechnicalSkills />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      
     </Router>
   )
 }

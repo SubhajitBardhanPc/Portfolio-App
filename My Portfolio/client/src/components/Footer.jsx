@@ -17,6 +17,7 @@ const Footer = () => {
           
           <p className="footer-text">Made by Subhajit</p>
           <p className="footer-text">&copy; 2025 Subhajit Bardhan. All Rights Reserved.</p>
+          
         </div>
 
         {/* GitHub Repos */}
